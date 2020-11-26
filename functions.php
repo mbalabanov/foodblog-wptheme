@@ -2,13 +2,13 @@
 <?php 
 
     /* Register JQuery and Bootstrap */ 
-    function custom_wp_theme_files(){
+    function food_blog_files(){
         wp_enqueue_script('jquery', get_template_directory_uri().'/js/jquery.min.js', array(),'1.0', true);
         wp_enqueue_style('bootstrap-css', get_template_directory_uri().'/css/bootstrap.min.css');
         wp_enqueue_script('bootstrap-js', get_template_directory_uri().'/js/bootstrap.bundle.min.js', array(),'1.0', true);
         wp_enqueue_style('my-style-sheet', get_template_directory_uri().'/style.css');
     }
-    add_action('wp_enqueue_scripts', 'custom_wp_theme_files');
+    add_action('wp_enqueue_scripts', 'food_blog_files');
 
     /* Register navwalker navigation bar */
     function register_navwalker(){
